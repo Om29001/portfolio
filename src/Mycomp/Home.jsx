@@ -20,10 +20,7 @@ export default function Home() {
 
   let [showMe, setshowMe] = useState(false)
 
-  var text = "A softe"
   var text1 = "A Software Engineer and Web Developer.."
-  text = text.replace(/\S/g, "<span className = el  >$&</span>")
-  text = parse(text)
   text1 = text1.replace(/\S/g, "<span className = el >$&</span>")
   text1 = parse(text1)
 
@@ -98,7 +95,7 @@ export default function Home() {
                   </a>
 
                   <a href="https://github.com/Om29001" className="mr-2">
-                    <Icon icon="akar-icons:github-fill" width={25} color="black"/>
+                    <Icon icon="akar-icons:github-fill" width={25} color="black" />
                   </a>
                 </motion.div>
                 <motion.div animate={{ opacity: [0, 1] }} transition={{ type: "easeOut", bounce: 1, duration: 1.5 }}>

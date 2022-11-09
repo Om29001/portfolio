@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import Mytablelist from './comp/Mytablelist';
 
 
 export default function Admin() {
-  
+
     const [cerlink, setCerlink] = useState({title:"",about:"",link :""});
     const [proindata, setProindata] = useState({
         language: "",
@@ -102,12 +102,12 @@ export default function Admin() {
                     <form method='POST'>
                         {/* <Select options={options} onChange={handleChange}/> */}
                         <select className="form-select" aria-label="Default select example" value={value} onChange={handleChange1}>
-                            <option value="1" selected>Project</option>
-                            <option value="2">Certificate</option>
-                            <option value="3">View</option>
+                            <option value={1} selected>Project</option>
+                            <option value={2}>Certificate</option>
+                            <option value={3}>View</option>
                         </select>
                         <hr />
-                        {value == 1 &&
+                        {value === 1 &&
 
                             <>
                                 <div className="form-outline">
@@ -135,7 +135,7 @@ export default function Admin() {
                                 <button type="submit" className="btn bg-primary bg-gradient text-white  col-12 " onClick={handleOm}>Send</button>
                             </>
                         }
-                        {value == 2 &&
+                        {value === 2 &&
                             <>
                             <div className="form-outline">
                                     <label className="form-label" for="typePassword">Title</label>
@@ -160,7 +160,7 @@ export default function Admin() {
 
                             </>
                         }
-                        {value == 3 &&
+                        {value === 3 &&
 
                             <>
                                 <table className="table">
