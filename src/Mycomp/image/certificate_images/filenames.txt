@@ -1,0 +1,11 @@
+Bloomzen_Web_Designing_Training.png,
+Digital_Marketing_Google.png,
+HackerRank_python_basics.png,
+HTML_and_PHP_Quiz.png,
+LiveTech_python.png,
+Network_and_Information_Security.png,
+Python_Quiz.png,
+ShapeAI_GDG.png,
+Shape_AI.png,
+Sparks_foundation_Payment_Gateway.png,
+Spoken_Tutorial_C_language.png
