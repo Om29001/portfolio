@@ -11,7 +11,7 @@ export default function Mycard(props) {
              &nbsp;<b ClassName="h4">{props.language}</b>   
                 </div>
                 <div className="card-body z-depth-1 text-white bg-dark">
-                    <h5 className="card-title text-success "><a href={props.link} target="_blank" ><b>
+                    <h5 className="card-title text-success "><a href={props.link} target="_blank" rel="noreferrer"><b>
                         {props.title}
                         </b></a></h5>
                     <p className="card-text">
