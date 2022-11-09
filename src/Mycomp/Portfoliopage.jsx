@@ -9,7 +9,8 @@ export default function Portfoliopage() {
 
   const callPortfoliopage = async (e) => {
     try {
-      const res = await fetch("/portfolio", {
+      console.log("bhai bhaoi")
+      const res = await fetch("https://omsurtiserver.herokuapp.com/portfolio", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       })
@@ -21,9 +22,8 @@ export default function Portfoliopage() {
     }
   }
   useEffect(() => {
-    console.log(pdata)
     callPortfoliopage()
-  }, [pdata])
+  }, [])
 
   return (
     <>
