@@ -3,7 +3,7 @@ import Header from "./Mycomp/Header"
 import Footer from "./Mycomp/Footer"
 import Home from "./Mycomp/Home"
 import Portfoliopage from "./Mycomp/Portfoliopage"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import Error from "./Mycomp/Error"
 import Admin from "./Mycomp/Admin"
 
