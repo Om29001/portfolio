@@ -9,7 +9,7 @@ export default function Portfoliopage() {
 
   const callPortfoliopage = async (e) => {
     try {
-      const res = await fetch("https://port-folio-server-omega.vercel.app/portfolio", {
+      const res = await fetch("https://port-folio-server-alpha.vercel.app/portfolio", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       })
