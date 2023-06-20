@@ -4,12 +4,15 @@ First project in MERN
 
 some snaps : 
 
-![image](https://github.com/Om29001/portfolio/assets/86549121/f055c9c4-6310-4e44-b829-cb1beb13f3cc)
+![image](https://github.com/Om29001/portfolio/assets/86549121/ff87ba2b-8ac2-4731-ad84-c061f61f695b)
 
-![image](https://github.com/Om29001/portfolio/assets/86549121/ec735754-f3da-432d-adfe-4e4dda34707a)
+![image](https://github.com/Om29001/portfolio/assets/86549121/9d7be9d0-ef05-49f7-bfa5-22f938c370ff)
 
-![image](https://github.com/Om29001/portfolio/assets/86549121/8bf3f5d3-03aa-4b46-a996-6a3c4f1f51cd)
+![image](https://github.com/Om29001/portfolio/assets/86549121/55cf9738-0466-4f02-a202-11ac9346f398)
 
-![image](https://github.com/Om29001/portfolio/assets/86549121/6270177c-ee65-4c50-b487-d5bb646279d9)
+![image](https://github.com/Om29001/portfolio/assets/86549121/1e53a652-378e-4206-9471-5b65a6c2ae1c)
+
+
+
 
 
