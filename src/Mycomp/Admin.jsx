@@ -37,6 +37,9 @@ export default function Admin() {
 
     const admindata = async (e) => {
         try {
+            if(value===3)
+            {
+                
             const res = await fetch('https://port-folio-server-alpha.vercel.app/admin/view'
                 , {
                     method: 'GET',
@@ -46,7 +49,7 @@ export default function Admin() {
 
             const data = await res.json();;
             setMdata(data);
-
+            }
         }
         catch (err) {
             console.log(err);
@@ -90,7 +93,7 @@ export default function Admin() {
 
     useEffect(() => {
         admindata();
-    }, [mdata])
+    }, [value])
 
 
 
