@@ -30,31 +30,9 @@ export default function Admin() {
     }
 
     const handleChange1 = (e) => {
-        console.log(e);
-        setValue(e.target.value);
-
+        setValue(v=>parseInt(e.target.value, 10));
     }
 
-    const admindata = async (e) => {
-        try {
-            if(value===3)
-            {
-                
-            const res = await fetch('https://port-folio-server-alpha.vercel.app/admin/view'
-                , {
-                    method: 'GET',
-                    headers: { 'Content-Type': 'application/json' }
-                }
-            );
-
-            const data = await res.json();;
-            setMdata(data);
-            }
-        }
-        catch (err) {
-            console.log(err);
-        }
-    }
     const handleOm = async (e) => {
         e.preventDefault();
         const { language, title, about, link } = proindata;
@@ -92,8 +70,22 @@ export default function Admin() {
     }
 
     useEffect(() => {
-        admindata();
-    }, [value])
+        if (value === 3) {
+           
+            fetch('https://port-folio-server-alpha.vercel.app/admin/view', {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(res => res.json())
+            .then(data => {
+                setMdata(data);
+            })
+            .catch(err => {
+                console.log(err);
+            });
+        }
+    }, [value]);
+    
 
 
 
@@ -105,7 +97,7 @@ export default function Admin() {
                     <form method='POST'>
                         {/* <Select options={options} onChange={handleChange}/> */}
                         <select className="form-select" aria-label="Default select example" value={value} onChange={handleChange1}>
-                            <option value={1} selected>Project</option>
+                            <option value={1}>Project</option>
                             <option value={2}>Certificate</option>
                             <option value={3}>View</option>
                         </select>
@@ -163,7 +155,7 @@ export default function Admin() {
 
                             </>
                         }
-                        {value === 3 &&
+                        {value === 3 && mdata &&
 
                             <>
                                 <table className="table">
