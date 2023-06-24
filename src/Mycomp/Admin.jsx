@@ -37,7 +37,7 @@ export default function Admin() {
 
     const admindata = async (e) => {
         try {
-            const res = await fetch('/admin/view'
+            const res = await fetch('https://port-folio-server-alpha.vercel.app/admin/view'
                 , {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' }
@@ -56,7 +56,7 @@ export default function Admin() {
         e.preventDefault();
         const { language, title, about, link } = proindata;
 
-        const res = await fetch("/admin/project", {
+        const res = await fetch("https://port-folio-server-alpha.vercel.app/admin/project", {
             method: "POST", headers: { 'Content-Type': 'application/json' }
             ,
             body: JSON.stringify({ language, title, about, link })
@@ -75,7 +75,7 @@ export default function Admin() {
     const imageUpload = async (e) => {
         e.preventDefault();
         const { title , about, link } = cerlink;
-        const res = await fetch("/admin", {
+        const res = await fetch("https://port-folio-server-alpha.vercel.app/admin", {
             method: "POST", headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({title , about, link})
         });
